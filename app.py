@@ -149,7 +149,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 5. Top 3 KPI Cards
-kpi1, kpi2, kpi3 = st.columns(3)
+# 5. Top KPI Cards
+kpi1, kpi2 = st.columns(2)
 
 with kpi1:
     st.markdown("""
@@ -168,16 +169,7 @@ with kpi2:
         <div class="kpi-sub">Test Baseline</div>
     </div>
     """, unsafe_allow_html=True)
-
-with kpi3:
-    st.markdown("""
-    <div class="kpi-card">
-        <div class="kpi-title">System Priority</div>
-        <div class="kpi-value">Recall (Type 2)</div>
-        <div class="kpi-sub">Prevent Missed Delays</div>
-    </div>
-    """, unsafe_allow_html=True)
-
+    
 st.write("")
 
 # 6. Two-Column Layout
